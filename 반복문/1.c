@@ -4,9 +4,10 @@
 int main()
 {
     int time = 60;
-    for (int time = 0; time >= 0; time--)
+    for (time; time >= 0; time--)
     {
         printf("%d ", time);
         Sleep(1000);
     }
+    printf("발사!\n");
 }
