@@ -4,21 +4,56 @@
 
 int main()
 {
-    int r, c;
+    int i, j;
     int A[ROWS][COLS] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     int B[ROWS][COLS] = {{9, 8, -7}, {6, -5, 4}, {-3, 2, 1}};
     int C[ROWS][COLS];
 
-    printf("頄夓棿 雿ъ儤");
-    for (r = 0; r < ROWS; r++)
+    printf("青凯 怠基\n");
+    for (i = 0; i < ROWS; i++)
     {
-        for (c = 0; c < COLS; c++)
+        for (j = 0; j < COLS; j++)
         {
-            C[r][c] = A[r][c] + B[r][c];
-            printf("%d ", C[r][c]);
+            C[i][j] = A[i][j] + B[i][j];
+            printf("%3d ", C[i][j]);
         }
-        printf("\n");
+        printf("\n\n");
     }
 
-    printf("頄夓棿 牒勳儤");
+    printf("青凯 滑基\n");
+    for (i = 0; i < ROWS; i++)
+    {
+        for (j = 0; j < COLS; j++)
+        {
+            C[i][j] = A[i][j] - B[i][j];
+            printf("%3d ", C[i][j]);
+        }
+        printf("\n\n");
+    }
+
+    printf("A狼 傈摹青纺\n");
+    for (i = 0; i < ROWS; i++)
+    {
+        for (j = 0; j < COLS; j++)
+        {
+            C[i][j] = A[j][i];
+            printf("%3d ", C[i][j]);
+        }
+        printf("\n\n");
+    }
+
+    printf("青纺 蚌祭\n");
+    for (i = 0; i < ROWS; i++)
+    {
+        for (j = 0; j < COLS; j++)
+        {
+            C[i][j] = 0;
+            for (int k = 0; k < COLS; k++)
+            {
+                C[i][j] += A[i][k] * B[k][j];
+            }
+            printf("%3d ", C[i][j]);
+        }
+        printf("\n\n");
+    }
 }
