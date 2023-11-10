@@ -1,17 +1,23 @@
 #include <stdio.h>
-int factorial(int n)
+#include <math.h>
+
+int pow3(int n)
 {
-    if (n == 0)
+    if (n == 1)
+    {
         return 1;
+    }
     else
-        return n * factorial(n - 1);
+    {
+        return pow(n, 3) + pow3(n - 1);
+    }
 }
+
 int main()
 {
     int n;
-    printf("정수를 입력하세요: ");
+    printf(" 정수를 입력하시오: ");
     scanf("%d", &n);
-    printf("%d", factorial(n));
 
-    return 0;
+    printf("%d\n", pow3(n));
 }
