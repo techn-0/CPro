@@ -5,9 +5,29 @@
 int main()
 {
     int i, j;
-    int A[ROWS][COLS] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int A[ROWS][COLS] = {{-1, 2, 3}, {4, -5, 6}, {7, 8, -9}};
     int B[ROWS][COLS] = {{9, 8, -7}, {6, -5, 4}, {-3, 2, 1}};
     int C[ROWS][COLS];
+
+    printf("A Çà·Ä\n");
+    for (i = 0; i < ROWS; i++)
+    {
+        for (j = 0; j < COLS; j++)
+        {
+            printf("%3d ", A[i][j]);
+        }
+        printf("\n\n");
+    }
+
+    printf("B Çà·Ä\n");
+    for (i = 0; i < ROWS; i++)
+    {
+        for (j = 0; j < COLS; j++)
+        {
+            printf("%3d ", B[i][j]);
+        }
+        printf("\n\n");
+    }
 
     printf("Çà¿­ µ¡»ù\n");
     for (i = 0; i < ROWS; i++)
@@ -42,7 +62,7 @@ int main()
         printf("\n\n");
     }
 
-    printf("Çà·Ä °ö¼À\n");
+    printf("Çà·Ä °ö¼À A * B\n");
     for (i = 0; i < ROWS; i++)
     {
         for (j = 0; j < COLS; j++)
@@ -51,6 +71,21 @@ int main()
             for (int k = 0; k < COLS; k++)
             {
                 C[i][j] += A[i][k] * B[k][j];
+            }
+            printf("%3d ", C[i][j]);
+        }
+        printf("\n\n");
+    }
+
+    printf("Çà·Ä °ö¼À B * A\n");
+    for (i = 0; i < ROWS; i++)
+    {
+        for (j = 0; j < COLS; j++)
+        {
+            C[i][j] = 0;
+            for (int k = 0; k < COLS; k++)
+            {
+                C[i][j] += B[i][k] * A[k][j];
             }
             printf("%3d ", C[i][j]);
         }
