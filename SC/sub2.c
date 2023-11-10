@@ -30,7 +30,5 @@ main()
 
     printf("\n소득세는 %d만원 입니다.\n", pay);
 
-    printf("20204327 정휘건\n");
-
     system("pause");
 }

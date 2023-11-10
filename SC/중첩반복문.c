@@ -15,6 +15,5 @@ main()
         }
         printf("\n");
     }
-    printf("20204327 ¡§»÷∞«\n");
     system("pause");
 }

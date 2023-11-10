@@ -14,7 +14,5 @@ int main()
         printf("\n%d는 홀수입니다.\n", num);
     }
 
-    printf("20204327 정휘건\n");
-
     system("pause");
 }

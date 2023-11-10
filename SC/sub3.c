@@ -18,13 +18,12 @@ main()
     {
         x1 = (-b + sqrt(d)) / (2 * a);
         x2 = (-b - sqrt(d)) / (2 * a);
-        printf("\n???°∆ ???: %lf\n", x1);
-        printf("?•È??? ???: %lf\n", x2);
+        printf("\n???ùù ???: %lf\n", x1);
+        printf("?ùù??? ???: %lf\n", x2);
     }
     else
     {
         printf("\n????? ????.\n");
     }
-    printf("20204327 ?????\n");
     system("pause");
 }

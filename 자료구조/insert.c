@@ -40,7 +40,6 @@ int main()
     }
 
     insertionSort(num, size);
-    printf("\n\n20204327 ¡§»÷∞«");
 
     getchar();
 }

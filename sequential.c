@@ -30,6 +30,4 @@ int main()
     scanf("%d", &vel);
 
     sequentialSearch(num, n, vel); // 순차 검색 수행
-
-    printf("20204327 정휘건");
 }

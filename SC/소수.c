@@ -22,6 +22,4 @@ int main()
     {
         printf("%d은 소수가 아닙니다.", num);
     }
-
-    printf("\n20204327 정휘건\n");
 }

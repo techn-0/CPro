@@ -53,7 +53,6 @@ int main()
     scanf("%d", &vel);
 
     binarySearch(num, 0, n - 1, vel); // 이진 검색 수행
-    printf("20204327 정휘건\n");
     getchar();
     return 0;
 }
